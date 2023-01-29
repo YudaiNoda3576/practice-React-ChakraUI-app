@@ -1,13 +1,12 @@
 import React from "react";
-import { Button, ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import theme from "./theme/theme";
+import { AppRoutes } from "./router/AppRoutes";
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Button color="primary" borderRadius="none">
-        テスト
-      </Button>
+      <AppRoutes />
     </ChakraProvider>
   );
 }

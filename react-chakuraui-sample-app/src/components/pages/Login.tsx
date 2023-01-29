@@ -1,5 +1,5 @@
-import { memo, VFC } from "react";
+import { memo } from "react";
 
-export const Login: VFC = memo(() => {
+export const Login = memo(() => {
   return <p>ログインページです</p>;
 });

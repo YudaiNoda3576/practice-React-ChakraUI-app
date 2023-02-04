@@ -11,8 +11,8 @@ export const AppRoutes = memo(() => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Login />} />
         <Route path="" element={<Layout />}>
-          <Route path="/" element={<Login />} />
           <Route path="home" element={<Outlet />}>
             <Route index element={<Home />} />
             <Route path="user_management" element={<UserManagement />} />
